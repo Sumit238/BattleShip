@@ -1,0 +1,46 @@
+<% layout('/layout/boilerplate.ejs') %>
+<link rel="stylesheet" href="/static/css/home.css" />
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Battleship grounds</h1>
+    <p class="lead text-center">Welcome to battleships</p>
+  </div>
+</div>
+<div class="row mt-5">
+  <div
+    class="
+      col-sm-4 col-8
+      offset-sm-4 offset-1
+      p-3
+      mb-5
+      shadow
+      p-3
+      bg-body
+      rounded-4
+    "
+  >
+    <form class="g-3" action="/deployships">
+      <div class="mb-3">
+        <label for="playername" class="form-label"><b>Enter name</b></label>
+        <input type="text" class="form-control" id="playername" required />
+      </div>
+
+      <div class="p-0 m-0 btn-group w-100">
+        <button
+          href="#"
+          type="submit"
+          class="btn btn-cartoon btn-play"
+          aria-current="page"
+        >
+          Play
+        </button>
+        <a
+          href="/privateroom"
+          rel="noopener noreferrer"
+          class="btn btn-cartoon btn-create-privateroom"
+          >Create private room</a
+        >
+      </div>
+    </form>
+  </div>
+</div>
